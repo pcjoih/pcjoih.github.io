@@ -1,0 +1,50 @@
+baseURL = 'https://pcjoih.github.io/'
+languageCode = 'ko-kr'
+title = '시골 정신과 의사의 세상살이'
+theme = 'PaperMod'
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+
+[params]
+  env = 'production'
+  description = '시골에서 정신과 의사로 살아가며 보고 듣고 느낀 이야기, 그리고 주식 투자 정보를 함께 나누는 블로그입니다.'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  comments = false
+  hidemeta = false
+  disableShare = false
+
+  [params.homeInfoParams]
+    Title = '시골 정신과 의사의 세상살이'
+    Content = '시골에서 정신과 의사로 일하며 마주한 세상 이야기와 주식 투자 정보를 함께 나눕니다.'
+
+[[menu.main]]
+  identifier = 'posts'
+  name = '글 목록'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'tags'
+  name = '태그'
+  url = '/tags/'
+  weight = 20
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
