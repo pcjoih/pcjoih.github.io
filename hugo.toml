@@ -41,16 +41,34 @@ buildExpired = false
   weight = 10
 
 [[menu.main]]
-  identifier = 'categories'
-  name = '주제'
-  url = '/categories/'
+  identifier = 'ev'
+  name = 'EV'
+  url = '/categories/ev/'
   weight = 20
+
+[[menu.main]]
+  identifier = 'game'
+  name = '게임'
+  url = '/categories/게임/'
+  weight = 30
+
+[[menu.main]]
+  identifier = 'it'
+  name = 'IT'
+  url = '/categories/it/'
+  weight = 40
+
+[[menu.main]]
+  identifier = 'parenting'
+  name = '육아'
+  url = '/categories/육아/'
+  weight = 50
 
 [[menu.main]]
   identifier = 'tags'
   name = '태그'
   url = '/tags/'
-  weight = 30
+  weight = 60
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
